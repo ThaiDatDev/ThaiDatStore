@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang ADMIN</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="../fontawesome/css/all.css" rel="stylesheet">
+    <link href="../fontawesome/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/cart_page.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
+</head>
+
+<body>
+    <div class="admin-body">
+        <div class="admin-header">
+            <div class="admin-header-back"><a href="account.html"><i class="fa-solid fa-angle-left"></i> Trở về</a>
+            </div>
+            <div><a href="../index.html"><img src="../img/logo.png" alt=""></a></div>
+        </div>
+        <div class="admin-sidebar">
+            <div class="admin-sidebar-title">Trang Quản Trị</div>
+            <div class="admin-sidebar-items">
+                <div>
+                    <input type="radio" name="sidebar" value="" id="all-bill" checked>
+                    <label for="all-bill" id="lb-ab"><i class="fa-solid fa-file-invoice"></i> Tất Cả Đơn Hàng (<span
+                            class="all-num"></span>)</label>
+                </div>
+                <div>
+                    <input type="radio" name="sidebar" value="" id="acceptable-bill">
+                    <label for="acceptable-bill" id="lb-pb"><i class="fa-solid fa-clipboard-question"></i> Đơn Hàng Đang
+                        Đợi Kiểm
+                        Duyệt (<span class="processing-num"></span>)</label>
+
+                </div>
+                <div>
+                    <input type="radio" name="sidebar" id="success-bill">
+                    <label for="success-bill" id="lb-sb"><i class="fa-solid fa-clipboard-check"></i> Đơn Hàng Thành Công
+                        (<span class="success-num"></span>)</label>
+                </div>
+                <div>
+                    <input type="radio" name="sidebar" id="rejected-bill">
+                    <label for="rejected-bill" id="lb-rb"><i class="fa-solid fa-file-circle-xmark"></i> Đơn Hàng Hủy Bỏ
+                        (<span class="reject-num"></span>)</label>
+                </div>
+                <div>
+                    <input type="radio" name="sidebar" id="conlusion">
+                    <label for="conlusion" id="lb-c"><i class="fa-solid fa-chart-bar"></i>Tổng Quan</label>
+                </div>
+            </div>
+        </div>
+        <div class="admin-content">
+            <div class="admin-table">
+                <div class="admin-table-title">
+                    <div>ID</div>
+                    <div>Tên Khách Hàng</div>
+                    <div>Số Điện Thoại</div>
+                    <div>Địa Chỉ</div>
+                    <div>Thời Gian Yêu Cầu</div>
+                    <div>Chi Tiết Giỏ Hàng</div>
+                    <div>Thành Tiền</div>
+                    <div>Trạng Thái</div>
+                </div>
+                <div class="admin-table-bills">
+                    <!-- <div class="admin-table-bill">
+                        <div>000000</div>
+                        <div>Thái Thành Đạt</div>
+                        <div>0921083980</div>
+                        <div>59/24 Nguyễn Dữ</div>
+                        <div>29/06/2022 10:36:41</div>
+                        <div>Chi Tiết</div>
+                        <div>100.000.000đ</div>
+                        <div>
+                            <i class="fa-solid fa-circle"></i>
+                            <select id="s2">
+                                <option value=" process">Process</option>
+                                <option value="success">Success</option>
+                                <option value="rejected">Rejected</option>
+                            </select>
+
+                        </div>
+
+                    </div> -->
+                </div>
+            </div>
+            <div class="admin-conlusion">
+                <div class="admin-chart">
+                    <div class="chart-items">
+                        <div>
+                            <div class="chart-item">
+                                <div class="ci-processing"></div>
+                                <div class="processing-numb">
+                                    0
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="chart-item">
+                                <div class="ci-success"></div>
+                                <div class="success-numb">
+                                    0
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="chart-item">
+                                <div class="ci-reject"></div>
+                                <div class="reject-numb">
+                                    0
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-legend">
+                        <div class="legend leg-processing"></div>
+                        <div>Processing</div>
+                        <div class="legend leg-success"></div>
+                        <div>Success</div>
+                        <div class="legend leg-reject"></div>
+                        <div>Reject</div>
+                    </div>
+                    <div class="chart-mode">
+                        <select name="" id="chart-mode">
+                            <option value="number" selected>Biểu Đồ Số Đơn Hàng</option>
+                            <option value="money">Biểu Đồ Số Tiền</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="admin-contents admin-footer">footer</div>
+    </div>
+</body>
+<script src="../js/data.js"></script>
+<script src="../js/data_server.js"></script>
+<script src="../js/admin_page.js"></script>
+</html>

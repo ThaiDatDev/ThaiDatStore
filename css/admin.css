@@ -1,0 +1,251 @@
+/* layout */
+.admin-body {
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr) minmax(1000px, 5fr);
+    grid-template-rows: 90px 1fr 90px;
+    height: 100vh;
+    row-gap: 5px;
+    column-gap: 5px;
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "footer footer"
+    ;
+}
+
+.admin-contents {
+    background-color: gold;
+    min-height: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* Header */
+.admin-header {
+    grid-area: header;
+    background-color: #fe0000;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    padding-inline: 10px;
+}
+
+.admin-header a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: white;
+}
+
+/* Sidebar */
+.admin-sidebar {
+    grid-area: sidebar;
+    display: grid;
+    grid-template-rows: 30px 1fr;
+}
+
+.admin-sidebar-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.admin-sidebar-items {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 5px;
+}
+
+.admin-sidebar-items input[type="radio"] {
+    visibility: hidden;
+}
+
+.admin-sidebar-items div {
+    display: table;
+    place-items: center;
+}
+
+.admin-sidebar-items label {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+#all-bill:checked+label,
+#acceptable-bill:checked+label,
+#success-bill:checked+label,
+#rejected-bill:checked+label,
+#conlusion:checked+label {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid red;
+    border-right: 6px solid red;
+    border-left: none;
+
+}
+
+/* Content */
+.admin-content {
+    grid-area: content;
+    padding-inline-end: 5px;
+    overflow-y: auto;
+}
+
+.admin-table-title {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr 1fr 1.3fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px;
+}
+
+.admin-table-title div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(131, 131, 131);
+    border: 1px solid silver;
+    color: white;
+}
+
+.admin-table-bill {
+
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr 1fr 1.3fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(50px, auto);
+    position: relative;
+}
+
+.admin-table-bill div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid silver;
+    border-top: none;
+    border-bottom: 1px solid white;
+    padding-inline: 5px;
+}
+
+.admin-table-bill div i {
+    font-size: 14px;
+    padding: 5px;
+    color: orange;
+}
+
+.admin-status {
+    cursor: pointer;
+}
+
+.admin-detail {
+    cursor: pointer;
+}
+
+.admin-detail:hover {
+    text-decoration: underline;
+}
+
+.no-border {
+    border: none;
+}
+
+.admin-chart {
+    width:400px;
+    height: 400px;
+    background-color: #dddddd;
+    position: relative;
+    padding-inline-start: 30px;
+    margin: 10px;
+    
+}
+
+.chart-items {
+    display: flex;
+    gap: 120px;
+}
+
+.chart-item1 {
+    display: flex;
+    gap: 70px;
+}
+
+.chart-item {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.ci-processing {
+    padding-top: 0px;
+    width: 80px;
+    height: 0px;
+    transition: padding 2s ease;
+    background-color: orange;
+}
+
+.ci-success {
+    padding-top: 0px;
+    width: 80px;
+    height: 0px;
+    transition: padding 2s ease;
+    background-color: green;
+}
+
+.ci-reject {
+    padding-top: 0px;
+    width: 80px;
+    height: 0px;
+    transition: padding 2s ease;
+    background-color: red;
+}
+
+.chart-legend {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: white;
+    position: absolute;
+    width: 110px;
+    height: 100px;
+    right: 5px;
+    top: 5px;
+    place-items: center;
+}
+
+.leg-processing {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+}
+
+.leg-success {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+}
+
+.leg-reject {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+
+.chart-mode {
+    padding: 10px;
+}
+
+#chart-mode {
+    border: 1px solid #dddddd;
+    height: 30px;
+    width: 200px;
+}
+#chart-mode:focus{
+    outline: 1px solid #dddddd;
+}
+
+/* Footer */
+.admin-footer {
+    grid-area: footer;
+}

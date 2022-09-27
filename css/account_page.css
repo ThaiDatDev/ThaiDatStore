@@ -1,0 +1,256 @@
+/* account */
+.account {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    /* display:none; */
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.acc-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    background-color: #fe0000;
+    color: white;
+}
+
+.acc-back {
+    margin: 13px 13px;
+    cursor: pointer;
+}
+
+
+.acc-form {
+    width: 700px;
+    height: fit-content;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid #b1b1b1;
+}
+
+.acc-form input[type="radio"] {
+    display: none;
+}
+
+.acc-form-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.acc-form-header label {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 3px solid white;
+    font-weight: bold;
+    font-family: arial;
+}
+
+#register:checked~#lb-reg,
+#login:checked~#lb-log {
+    border-bottom: 3px solid #fe0000;
+    color: #fe0000;
+
+}
+
+.acc-form-reg {
+    margin: 10px 40px;
+    display: none;
+    animation: appear 0.2s linear forwards;
+}
+
+.acc-form-log {
+    margin: 10px 40px;
+    animation: appear 0.2s linear forwards;
+
+}
+
+.acc-form-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    font-size: 18px;
+}
+
+.acc-form-input:focus {
+    outline: 2px solid #bfdeff;
+}
+
+.acc-form-reg div,
+.acc-form-log div {
+    padding: 5px 0;
+}
+
+.acc-form-reg .end {
+    padding: 10px 0 30px 0;
+}
+
+.acc-form-reg button[type="submit"],
+.acc-form-log button[type="submit"],
+#submit {
+    width: 100%;
+    margin-left: 3px;
+    height: 50px;
+    background-color: #fe0000;
+    border: 0px solid #fe0000;
+    cursor: pointer;
+    color: white;
+    font-size: 18px
+}
+
+.acc-form-reg button[type="submit"]:hover,
+.acc-form-log button[type="submit"]:hover {
+    background-color: #f15f53;
+}
+
+.acc-form-end {
+    padding: 30px
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+}
+
+.login-support {
+    text-decoration: underline;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.login-title {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.doublehr {
+    border-top: 3px double #ced4da;
+    width: 200px;
+
+}
+
+.or {
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    margin-top: -12px;
+    z-index: 3;
+}
+
+.login-item {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-item {
+    display: flex;
+    place-items: center;
+    gap: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.login-item div {
+    padding-left: 2px;
+}
+
+#fblogin {
+    background-color: #143675;
+}
+
+#fblogin:hover {
+    background-color: #184599;
+}
+
+#gglogin {
+    background-color: #185cda;
+}
+
+#gglogin:hover {
+    background-color: #1d6af8;
+}
+
+.acc-form-loged {
+    width: 700px;
+    height: fit-content;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid #b1b1b1;
+    padding-inline: 10px 10px;
+}
+
+.acc-form-loged div {
+    padding: 5px 0;
+}
+
+.log-out {
+    background-color: rgb(255, 0, 0, 0.8);
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    color: white;
+    padding: 2px;
+    margin-left: 5px;
+    user-select: none;
+}
+
+.log-out:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.log-out:active {
+    background-color: rgb(255, 0, 0, 0.5);
+
+}
+
+.admin-manager {
+    background-color: rgb(0, 128, 0, 0.8);
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    color: white;
+    padding: 2px;
+    user-select: none;
+    margin-left: 5px;
+}
+
+.admin-manager:hover {
+    background-color: rgb(0, 128, 0);
+}
+
+.admin-manager:active {
+    background-color: rgb(0, 128, 0, 0.5);
+}
+
+.cart-logged-in {
+    background-color: rgb(255, 165, 0, 0.8);
+    height: 200px;
+    cursor: pointer;
+    color: white;
+    padding: 2px;
+    user-select: none;
+}
+
+.cart-logged-in :hover {
+    background-color: rgb(255, 165, 0);
+}
+
+.cart-logged-in :active {
+    background-color: rgb(255, 165, 0, 0.5);
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài khoản Thái Đạt</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="../fontawesome/css/all.css" rel="stylesheet">
+    <link href="../fontawesome/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/cart_page.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
+</head>
+
+<body id="body">
+    <div>
+        <div class="cart-header">
+            <div class="acc-back">
+                <a href="../index.html"><i class="fa-solid fa-angle-left"></i> Trở về</a>
+            </div>
+            <div>
+                <a href="../index.html"><img src="../img/logo.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="cart-body">
+        <div class="cart-title">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Giỏ Hàng
+        </div>
+        <div class="cart-main">
+            <div class="cart-content">
+                <!-- <div class="cart-zero">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>CHƯA CÓ MẶT HÀNG NÀO TRONG GIỎ HÀNG CỦA BẠN</span>
+                    <div>Còn rất nhiều mặt hàng ưu đãi sốc. Đừng bỏ lỡ!!!</div>
+                    <span><a href="../index.html">Quay về trang chủ ngay nào</a></span>
+                </div> -->
+                <!-- <div class="cart-content-product">
+                    <div class="cart-product-img">
+                        <img src="../img/t1_img/1.png" alt="">
+                    </div>
+                    <div class="cart-product-info">
+                        <div class="cart-product-name">{Product Name}</div>
+                        <div class="cart-product-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="cart-product-sale-price">{Product sale price}</div>
+                        <div class="cart-sale-off">
+                            <span class="cart-product-sale-off">
+                                0%
+                            </span>
+                            <span class="cart-product-actual-price">
+                                 {Product actual price}
+                            </span>
+                        </div>
+                        <div class="cart-product-control">
+                            <button class="cart-minus">-</button>
+                            <input type="text"  value="1" disabled>
+                            <button class="cart-plus">+</button>
+                        </div>
+                    </div>
+                    <div class="delete-cart-product">
+                        &times
+                    </div>
+                </div> -->
+            </div>
+            <div class="cart-user">
+                <div class="cart-user-info">
+                    <div class="cart-user-title">Dịch Vụ Vận Chuyển Tận Nhà</div>
+                    <div>
+                        <label for="">Tên liên hệ</label><br>
+                        <input type="text" placeholder="Họ và Tên / Tên liên lạc" minlength="2" id="cart-user-name">
+                    </div>
+                    <div>
+                        <label for="">Số điện thoại</label><br>
+                        <input type="text" placeholder="Số điện thoại liên lạc" maxlength="10" id="cart-user-phone">
+                    </div>
+                    <div>
+                        <label for="">Địa Chỉ</label><br>
+                        <input type="text" placeholder="Địa chỉ hiện tại / Địa chỉ nhận hàng" id="cart-user-address">
+                    </div>
+                    <div class="cart-user-text">
+                        (*)Thái Đạt Store cam kết bảo mật thông tin khách hàng. Cam kết giao hàng nhanh, nguyên vẹn, đổi
+                        1:1 với sản phẩm bị hư hại
+                    </div>
+                    <div class="cart-user-login">
+                        Hãy là thành viên của Thái Đạt Store, bạn có thể <a href="account.html">Đăng Nhập</a> để tích
+                        điểm!!!
+                    </div>
+
+                </div>
+            </div>
+            <div class="cart-user__mobile">
+                <div class="cart-user-info">
+                    <div class="cart-user-title">Dịch Vụ Vận Chuyển Tận Nhà</div>
+                    <div>
+                        <label for="">Tên liên hệ</label><br>
+                        <input type="text" placeholder="Họ và Tên / Tên liên lạc" pattern="[a-zA-Z]{2,30}" minlength="2"
+                            id="cart-user-name__mobile">
+                    </div>
+                    <div>
+                        <label for="">Số điện thoại</label><br>
+                        <input type="text" placeholder="Số điện thoại liên lạc" maxlength="10"
+                            id="cart-user-phone__mobile">
+                    </div>
+                    <div>
+                        <label for="">Địa Chỉ</label><br>
+                        <input type="text" placeholder="Địa chỉ hiện tại / Địa chỉ nhận hàng"
+                            id="cart-user-address__mobile">
+                    </div>
+                    <div class="cart-user-text">
+                        (*)Thái Đạt Store cam kết bảo mật thông tin khách hàng. Cam kết giao hàng nhanh, nguyên vẹn, đổi
+                        1:1 với sản phẩm bị hư hại
+                    </div>
+                    <div class="cart-user-login">
+                        Hãy là thành viên của Thái Đạt Store, bạn có thể <a href="account.html">Đăng Nhập</a> để tích
+                        điểm!!!
+                    </div>
+
+                </div>
+                <div class="cart-user-control">
+                    <i class="fa-solid fa-angle-left cart-user-control-icon"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="cart-footer">
+        <div class="cart-pay-receipt">
+            Xem Trước Hóa Đơn <i class="fa-solid fa-file-invoice-dollar"></i>
+        </div>
+        <div class="cart-pay-total">
+            0đ
+        </div>
+        <div class="cart-pay">
+            <div>THANH TOÁN <i class="fa-solid id fa-angle-right"></i><br>
+                <span class="pay-count">(với <span class="pay-count-product"></span> mặt hàng)</span>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="cart-extention">
+        <div class="cart-bill">
+            <div class="cart-bill-content">
+                <div class="cart-bill-header">
+                    <div class="cart-bill-company">THAI DAT STORE</div>
+                    <div class="cart-bill-info">
+                        <div>
+                            <span>Tên khách hàng: </span>
+                            <span class="bill-info-name">{name}</span>
+                        </div>
+                        <div>
+                            <span>Số điện thoại: </span>
+                            <span class="bill-info-phone">{phone}</span>
+                        </div>
+                        <div>
+                            <span>Địa chỉ: </span>
+                            <span class="bill-info-address">{address}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-bill-body">
+                    <div class="cart-bill-cart-title">
+                        ĐƠN HÀNG
+                    </div>
+                    <div class="cart-bill-products">
+                        <!-- <div class="cart-bill-product">
+                            <div class="cart-bill-product-name">
+                                Smart Tivi QLED Samsung 4K 65 inch QA65Q60AAKXXV
+                            </div>
+                            <div class="cart-bill-product-count">
+                                x1
+                            </div>
+                            <div class="cart-bill-product-price">
+                                10.000.000đ
+                            </div>
+                        </div> -->
+
+                    </div>
+                    <div class="cart-bill-total">
+                        Tổng: <span class="total-price">0đ</span>
+                    </div>
+                </div>
+                <div class="cart-bill-footer">
+                    <div class="bill-footer-text">
+                        (*) Hóa đơn này có giá trị dùng khi khách hàng có khiếu nại trong sự cố giao hàng, bảo hành, bảo
+                        dưỡng
+                    </div>
+                    <div class="bill-footer-text">
+                        (**) Thời gian in hóa đơn : <span class="bill-date">{date}</span>
+                    </div>
+                    <div class="bill-footer-text">
+                        (***) Cam kết thời gian nhận hàng nhanh chóng, tối đa 3 ngày từ khi lên hóa đơn này
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="alert-message">
+        <p class="alert-message-text"><i class="fa-solid fa-triangle-exclamation"></i> Bạn đã yêu cầu thanh toán thành công!</p>
+        <p> Thái Đạt Store sẽ xác nhận và liên lạc với quý khách trong thời gian sớm nhất</p>
+    </div>
+</body>
+<script src="../js/data_server.js"></script>
+<script src="../js/cart_page.js"></script>
+<script src="../node_modules/file-saver/FileSaver.js"></script>
+<script src="../js/cart_page_bill.js"></script>
+
+</html>

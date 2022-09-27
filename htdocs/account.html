@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài khoản Thái Đạt</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/popup.css">
+    <link href="../fontawesome/css/all.css" rel="stylesheet">
+    <link href="../fontawesome/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/account_page.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <div class="account">
+        <div class="acc-header">
+            <div class="acc-back">
+                <a href="../index.html"><i class="fa-solid fa-angle-left"></i> Trở về</a>
+            </div>
+            <div>
+                <a href="../index.html"><img src="../img/logo.png" alt="" id="logo"></a>
+            </div>
+        </div>
+        <div class="acc-body">
+            <form action="" class="acc-form" onsubmit="Submit()">
+                <div class="acc-form-header">
+                    <div>
+                        <input type="radio" name="login" id="register" value="">
+                        <label for="register" id="lb-reg">ĐĂNG KÝ</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="login" id="login" value="" checked>
+                        <label for="login" id="lb-log">ĐĂNG NHẬP</label>
+                    </div>
+                </div>
+                <div class="acc-form-log">
+                    <div><input type="text" class="acc-form-input" placeholder="Email/Số Điện Thoại" id="account"
+                            autocomplete="off">
+                        <div class="account-message-error"></div>
+                    </div>
+
+                    <div><input type="password" class="acc-form-input" placeholder="Mật Khẩu" id="password">
+                        <div class="password-message-error"></div>
+                    </div>
+                    <div class="login-support">
+                        <div>
+                            Quên mật khẩu?
+                        </div>
+                        <div>
+                            Đăng nhập với SMS
+                        </div>
+                    </div>
+                    <div class="end">
+                        <input type="submit" id="submit" value="Đăng nhập">
+                    </div>
+                    <div class="login-title">
+                        <div class="doublehr"> </div>
+                        <div class="or">Hoặc</div>
+                        <div class="doublehr"></div>
+                    </div>
+                    <div class="login-item" id="fblogin">
+                        <div>
+                            <img src="../img/fb.svg" alt="">
+                        </div>
+                        <div class="lgWay-text">
+                            ĐĂNG NHẬP BẰNG FACEBOOK
+                        </div>
+                    </div>
+                    <div class="login-item" id="gglogin">
+                        <div>
+                            <img src="../img/gg.png" alt="">
+                        </div>
+                        <div class="lgWay-text">
+                            ĐĂNG NHẬP BẰNG GOOGLE
+                        </div>
+                    </div>
+                </div>
+                <div class="acc-form-reg">
+                    <div><input type="text" class="acc-form-input" placeholder="Họ và tên"></div>
+                    <div><input type="text" class="acc-form-input" placeholder="Số điện thoại"></div>
+                    <div><input type="text" class="acc-form-input" placeholder="Email"></div>
+                    <div><input type="password" class="acc-form-input" placeholder="Mật khẩu"></div>
+                    <div><input type="password" class="acc-form-input" placeholder="Nhập lại mật khẩu"></div>
+                    <div class="end">
+                        <button type="submit">ĐĂNG KÝ <i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+<script src="../js/data.js"></script>
+<script src="../js/account_page.js"></script>
+
+</html>

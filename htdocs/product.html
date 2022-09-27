@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/popup.css">
+    <link rel="stylesheet" href="../css/product_page.css">
+    <link href="../fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link href="../fontawesome/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/animation.css">
+    <title>Trang bán hàng</title>
+</head>
+
+<body>
+    <div class="topbar">
+        <img src="../img/topbar.png" alt="" id="tb-img">
+        <div class="topbar-close">
+            <span>&times;</span>
+        </div>
+    </div>
+    <div></div>
+    <div class="navbar">
+        <div class="menu-icon__mobile">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <!-- LOGO -->
+        <div class="nav-item logo">
+            <a href="../index.html"><img src="../img/logo.png" alt="" id="logo"></a>
+        </div>
+        <!-- Search -->
+        <div class="nav-item search">
+            <input type="text" id="search-menu" autocomplete="off" placeholder="Bạn cần gì hôm nay?">
+            <div class="search-icon">
+                <img src="../img/search-icon.png" alt="" id="s-icon">
+            </div>
+        </div>
+        <a href="cart.html">
+            <div class="nav-item cart">
+                <div class="nav-cart-number">0</div>
+                <i class="fa-solid fa-cart-arrow-down" id="icon"></i>
+                <div class="cart-text">Giỏ hàng</div>
+            </div>
+        </a>
+        <div class="nav-item profile">
+            <a href="account.html">
+                <i class="fa-solid fa-user" id="icon"></i>
+                <div class="session-login">Tài Khoản</div>
+            </a>
+        </div>
+        <div class="nav-item call">
+            <i class="fa-solid fa-phone" id="icon"></i>
+            <div>Liên hệ</div>
+            <!-- .call hover -->
+            <div class="contact-hv">
+                <div class="contact-content">
+                    <div><i class="fa-solid fa-caret-up"></i></div>
+                    <div class="contact-hv-content">
+                        <b>Thời gian hoạt động</b>
+                        <div>SĐT: 0921083980</div>
+                        <div>(Đạt)</div>
+                        <div class="contact-content-time"><b>8h00-21h00</b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-fc">
+            <div class="search-content">
+                <div class="fa-caret"><i class="fa-solid fa-caret-up"></i></div>
+                <div class="search-fc-blur">
+                    <div class="search-fc-content">
+                        <div class="nav-search-title">Kết quả nội dung tìm kiếm hàng đầu</div>
+                        <div class="nav-search-items">
+                            <!-- <a href="#">
+                                <div class="nav-search-item">
+                                    <div class="nav-item-image"><img src="img/default.png" alt=""></div>
+                                    <div class="nav-item-info">
+                                       <div class="nav-item-name">{NameofProduct}</div>
+                                       <span class="nav-item-sale-off">10%</span>
+                                       <span class="nav-item-sale-price">{SalePrice}</span>
+                                    </div>
+                                </div>
+                            </a> -->
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content-body">
+            <div class="main-content">
+                <div class="service">
+                    <div class=" main-sv-item"><i class="fa-solid fa-rectangle-list"></i> Danh mục sản phẩm
+                    </div>
+                    <div class="service-item sv-car"><i class="fa-solid fa-car-side"></i> Miễn phí giao lắp</div>|
+                    <div class="service-item"><i class="fa-solid fa-book"></i> Cẩm nang khuyến mãi</div>|
+                    <div class="service-item"><i class="fa-solid fa-cart-flatbed-suitcase"></i> Hướng dẫn mua hàng
+                        online</div>|
+                    <div class="service-item"><i class="fa-solid fa-trophy"></i> Thương hiệu nổi bật</div>
+                </div>
+                <!-- begin content -->
+                <div class="product-details">
+                    <div class="product-detail-img">
+                        <img src="../img/t1_img/1.png" alt="" id="img-product-detail">
+                    </div>
+                    <div class="produc-detail">
+                        <div class="product-detail-name">{Name.Product}</div>
+                        <div class="product-detail-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="product-detail-img_info">
+                            <div class="product-detail-img__mobile">
+                                <img src="../img/default.png" alt="" id="img-product-detail__mobile">
+                            </div>
+                            <div class="product-detail-prices">
+                                <div class="product-detail-sale-price">
+                                    {Product Sale Price}
+                                </div>
+                                <div class="product-detail-sale">
+                                    <span class="product-detail-sale-off">
+                                        0%
+                                    </span>
+                                    <span class="product-detail-actual-price">
+                                        {Actual Price}
+                                    </span>
+                                </div>
+
+                                <div class="product-detail-new">
+                                    Mới
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="product-detail-buy">
+                            <div class="detail-buy product-detail-flash-buy">
+                                MUA NGAY <br>
+                                Giao hàng tận nơi
+                            </div>
+                            <div class="detail-buy product-detail-to-cart">
+                                <div class="to-cart-icon">
+                                    <i class="fa-solid fa-box"></i>
+                                </div>
+                                THÊM VÀO GIỎ HÀNG
+                            </div>
+                        </div>
+                        <div class="product-detail-contact">
+                            Gọi đặt mua <a href="tel:0921083980">0921083980</a> (08h - 21h)
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- end content -->
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-top-bar">
+            <div class="footer-top-bar-main">
+                <div class="footer-top-bar-content">
+                    <div class="icon-footer">
+                        <div class="icon-footer-item">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="icon-footer-item">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <div class="icon-footer-item">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                    <div class="footer-messages">
+                        <div class="footer-messages-content">
+                            <div class="icon-footer-item">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="footer-messages-text">
+                                Bạn muốn là người sớm nhất nhận khuyến mãi đặc biệt. <br> Đăng ký ngay.
+                            </div>
+                        </div>
+                        <div class="email-register">
+                            <input type="text" placeholder="Thả Email Nhận Ưu Đãi">
+                            <button>Đăng ký</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-credit">
+            <div class="footer-credit-main">
+                <div class="credit-wrap">
+                    <div class="credit-item">
+                        <div class="credit-title">Thông tin công ty</div>
+                        <p>Giới thiệu công ty</p>
+                        <p>Quy chế hoạt động sàn TMĐT</p>
+                        <p>Hệ thống cửa hàng</p>
+                        <p>Mua hàng doanh nghiệp</p>
+                        <p>Tuyển dụng</p>
+                        <p>Liên hệ</p>
+                    </div>
+                    <div class="credit-item">
+                        <div class="credit-title">Danh mục hàng đầu</div>
+                        <p>Máy lạnh</p>
+                        <p>Máy giặt</p>
+                        <p>Tủ lạnh</p>
+                        <p>Tivi</p>
+                        <p>Gia dụng</p>
+                    </div>
+                    <div class="credit-item">
+                        <div class="credit-title">Chính sách</div>
+                        <p>Ưu đãi đối tác</p>
+                        <p>Điều kiện giao dịch</p>
+                        <p>Bảo vệ thông tin người dùng</p>
+                        <p>Bảo vệ thông tin giao dịch khách hàng</p>
+                        <p>Chính sách bảo hành</p>
+                        <p>Chính sách và quy định thanh toán</p>
+                        <p>Chính sách 30 ngày đổi mới</p>
+                    </div>
+                    <div class="credit-item">
+                        <div class="credit-title">Hỗ trợ khách hàng</div>
+                        <p>Hướng dẫn mua hàng</p>
+                        <p>Hóa đơn điện tử</p>
+                        <p>Câu hỏi thường gặp</p>
+                        <p>Vận chuyển và giao nhận</p>
+                        <p>Phương thức thanh toán</p>
+                        <p>Tra cứu đơn hàng</p>
+                        <p>Bảng giá dịch vụ lắp đặt</p>
+                    </div>
+                    <div class="credit-item">
+                        <div class="credit-title">Thông tin khác</div>
+                        <p>Email :
+                        <div class="highlight">thaidat@gmail.com</div>
+                        </p>
+                        <p>Mua hàng - Góp ý - Bảo hành</p>
+                        <p>Gọi:
+                        <div class="highlight">19001000</div>
+                        </p>
+                        <p>Miễn phí</p>
+                        <p>Sơ đồ trang web</p>
+                        <p>
+                        <div class="highlight">Cảnh báo giả mạo</div>
+                        </p>
+                        <p>Kênh tiếp nhận vấn đề về hối lộ</p>
+                        <p>Đường dây nóng:
+                        <div class="highlight">19001010</div>
+                        </p>
+                    </div>
+                    <div class="credit-item">
+                        <div class="credit-title">Group bussiness</div>
+                        <p>Supersports</p>
+                        <p>Big C</p>
+                        <p>GO! Mall</p>
+                        <p>GO! Hyper</p>
+                        <p>Topsmarket</p>
+                    </div>
+                    <div class="credit-item">
+                        <div class="credit-title">Group bussiness</div>
+                        <p>Lanchi mart</p>
+                        <p>LookKool</p>
+                        <p>Kubo</p>
+                        <p>ROBINS</p>
+                        <p>Hello Beauty Vietnam</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-payment">
+            <div class="footer-payment-main">
+                <div class="highlight1">THÁI ĐẠT - KÊNH MUA SẮM TRỰC TUYẾN <br> UY TÍN HÀNG ĐẦU VIỆT NAM </div>
+                <div>
+                    <div class="credit-title">Phương thức thanh toán</div>
+                    <div>
+                        <!-- <img src="../img/footer-payment.png" alt=""> -->
+                    </div>
+                </div>
+                <div>
+                    <div class="credit-title">Chứng nhận</div>
+                    <div>
+                        <img src="../img/footer-archive.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="copyright-content">
+                Copyright © 1999 - 2022 Công ty Cổ phần Thương mại Thái Đạt.
+                <br>
+                Giấy chứng nhận đăng ký kinh doanh số xxxxxxxx, cấp ngày 22/06/2006 bởi Sở Kế hoạch và Đầu tư
+                TP. Hồ Chí Minh.
+                <br>
+                Địa chỉ đăng ký trụ sở chính: 59/24 Nguyễn Dữ, Vĩnh Hòa, Nha Trang, Khánh Hòa
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------- -->
+
+
+    <!--  -->
+    <div class="extention">
+        <div class="menu__mobile">
+            <div class="menu-items__mobile">
+                <div class="menu-item-close__mobile">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="menu-item-content__mobile">
+                    <div class="menu-item__mobile">
+                        <i class="fa-solid fa-house"></i> Trang chủ
+                    </div>
+                    <div class="menu-item__mobile">
+                        <i class="fa-solid fa-magnifying-glass"></i> Tìm Kiếm
+                    </div>
+                    <a href="">
+                        <div class="menu-item__mobile">
+                            <i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng
+                        </div>
+                    </a>
+                    <div class="menu-item__mobile">
+                        <i class="fa-solid fa-user"></i> <a href="account.html">Tài Khoản</a>
+                    </div>
+                    <div class="menu-item__mobile">
+                        <i class="fa-solid fa-phone"></i> <a href="tel:0921083980">Liên Hệ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="overplay"></div>
+        </div>
+        <div class="message-box">
+            <div class="message-box-content">
+                {message box}
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/topbar.js"></script>
+<script src="../js/header.js"></script>
+<script src="../js/data.js"></script>
+<script src="../js/product_page.js"></script>
+
+</html>

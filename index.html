@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="fontawesome/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animation.css">
+    <title>Trang bán hàng</title>
+</head>
+
+<body>
+    <div class="topbar">
+        <img src="img/topbar.png" alt="" id="tb-img">
+        <div class="topbar-close">
+            <span>&times;</span>
+        </div>
+    </div>
+    <div></div>
+    <div class="navbar">
+        <div class="menu-icon__mobile">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <!-- LOGO -->
+        <div class="nav-item logo">
+            <a href="#"><img src="img/logo.png" alt="" id="logo"></a>
+        </div>
+        <!-- Search -->
+        <div class="nav-item search">
+            <input type="text" id="search-menu" autocomplete="off" placeholder="Bạn cần gì hôm nay?">
+            <div class="search-icon">
+                <img src="img/search-icon.png" alt="" id="s-icon">
+            </div>
+        </div>
+
+        <a href="htdocs/cart.html">
+            <div class="nav-item cart">
+                <div class="nav-cart-number">0</div>
+                <i class="fa-solid fa-cart-arrow-down" id="icon"></i>
+                <div class="cart-text">Giỏ hàng</div>
+            </div>
+        </a>
+        <div class="nav-item profile">
+            <a href="htdocs/account.html">
+                <i class="fa-solid fa-user" id="icon"></i>
+                <div class="session-login">Tài Khoản</div>
+            </a>
+        </div>
+        <div class="nav-item call">
+            <i class="fa-solid fa-phone" id="icon"></i>
+            <div>Liên hệ</div>
+            <!-- .call hover -->
+            <div class="contact-hv">
+                <div class="contact-content">
+                    <div><i class="fa-solid fa-caret-up"></i></div>
+                    <div class="contact-hv-content">
+                        <b>Thời gian hoạt động</b>
+                        <div>SĐT: 0921083980</div>
+                        <div>(Đạt)</div>
+                        <div class="contact-content-time"><b>8h00-21h00</b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-fc">
+            <div class="search-content">
+                <div class="fa-caret"><i class="fa-solid fa-caret-up"></i></div>
+                <div class="search-fc-blur">
+                    <div class="search-fc-content">
+                        <div class="nav-search-title">Kết quả nội dung tìm kiếm hàng đầu</div>
+                        <div class="nav-search-items">
+                            <!-- <a href="#">
+                                <div class="nav-search-item">
+                                    <div class="nav-item-image"><img src="img/default.png" alt=""></div>
+                                    <div class="nav-item-info">
+                                       <div class="nav-item-name">{NameofProduct}</div>
+                                       <span class="nav-item-sale-off">10%</span>
+                                       <span class="nav-item-sale-price">{SalePrice}</span>
+                                    </div>
+                                </div>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content-body">
+            <!-- main content -->
+            <div class="main-content">
+                <div class="service">
+                    <div class="main-sv-item"><i class="fa-solid fa-rectangle-list"></i> Danh mục sản phẩm
+                    </div>
+                    <div class="service-item sv-car"><i class="fa-solid fa-car-side"></i> Miễn phí giao lắp</div>|
+                    <div class="service-item"><i class="fa-solid fa-book"></i> Cẩm nang khuyến mãi</div>|
+                    <div class="service-item"><i class="fa-solid fa-cart-flatbed-suitcase"></i> Hướng dẫn mua hàng
+                        online</div>|
+                    <div class="service-item"><i class="fa-solid fa-trophy"></i> Thương hiệu nổi bật</div>
+                </div>
+
+
+                <div class="category">
+                    <div class="category-menu">
+                        <div class="category-menu-item-main">
+                            <div class="cmim"><i class="fa-solid fa-gift"></i> Tổng hợp khuyến mãi</div>
+                        </div>
+                        <div class="category-menu-item">
+                            <div><i class="fa-solid fa-wind"></i> <span>Tủ lạnh</span>-<span>Tủ đông</span>-<span>Tủ
+                                    mát</span></div>
+                            <div class="arrow-category"><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
+                        <div class="category-menu-item">
+                            <div><i class="fa-solid fa-fire"></i> <span>Máy giặt</span>-<span>Máy nước nóng</span></div>
+                            <div class="arrow-category"><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
+                        <div class="category-menu-item">
+                            <div><i class="fa-solid fa-mobile-screen"></i> <span>Điện
+                                    thoại</span>-<span>Tablet</span>-<span>Phụ Kiện</span></div>
+                            <div class="arrow-category"><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
+                        <div class="category-menu-item">
+                            <div><i class="fa-solid fa-laptop"></i> <span>Laptop</span>-<span>PC</span>-<span>Máy
+                                    in</span></div>
+                            <div class="arrow-category"><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
+                        <div class="category-menu-item">
+                            <div><i class="fa-solid fa-snowflake"></i> <span>Máy lạnh</span>-<span>Máy lọc không
+                                    khí</span></div>
+                            <div class="arrow-category"><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
+                        <div class="category-menu-item">
+                            <div><i class="fa-solid fa-fan"></i> <span>Đồ gia dụng</span>-<span>Quạt</span></div>
+                            <div class="arrow-category"><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
+                        <div class="category-menu-item">
+                            <div><i class="fa-solid fa-camera"></i> <span>Máy ảnh</span>-<span>Máy quay</span>-<span>Phụ
+                                    kiện</span></div>
+                            <div class="arrow-category"><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
+                        <div class="category-menu-item">
+                            <div><i class="fa-solid fa-toolbox"></i> <span>Công cụ</span>-<span>Dụng cụ</span></div>
+                            <div class="arrow-category"><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
+                        <div class="category-menu-item">
+                            <div><i class="fa-solid fa-award"></i> <span>Thương hiệu nổi bật</span></div>
+                            <div class="arrow-category"><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
+                        <div class="category-menu-item">
+                            <div><i class="fa-solid fa-wand-magic-sparkles"></i> <span>Kinh nghiệm hay - Mẹo vặt</span>
+                            </div>
+                            <div class="arrow-category"><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                    <div class="banner-carousel">
+                        <div class="hinh1 hinh">
+                            <img src="img/crs1.png" alt="">
+                        </div>
+                        <div class="hinh2 hinh">
+                            <img src="img/crs2.png" alt="">
+                        </div>
+                        <div class="hinh3 hinh">
+                            <img src="img/crs3.png" alt="">
+                        </div>
+                        <div class="hinh4 hinh">
+                            <img src="img/crs4.png" alt="">
+                        </div>
+                        <div class="hinh5 hinh">
+                            <img src="img/crs5.png" alt="">
+                        </div>
+                        <div class="carousel-arrow-left-control crs-click">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                        <div class="carousel-arrow-right-control crs-click">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                        <div class="carousel-radio-control">
+                            <span>
+                                <input type="radio" class="carousel" name="carousel" id="crs-1" checked>
+                                <label for="crs-1"></label>
+                            </span>
+                            <span>
+                                <input type="radio" class="carousel" name="carousel" id="crs-2">
+                                <label for="crs-2"></label>
+                            </span>
+                            <span>
+                                <input type="radio" class="carousel" name="carousel" id="crs-3">
+                                <label for="crs-3"></label>
+                            </span>
+                            <span>
+                                <input type="radio" class="carousel" name="carousel" id="crs-4">
+                                <label for="crs-4"></label>
+                            </span>
+                            <span>
+                                <input type="radio" class="carousel" name="carousel" id="crs-5">
+                                <label for="crs-5"></label>
+                            </span>
+
+                        </div>
+                    </div>
+                    <div class="menu-item-popup">
+                        #menu-item
+                    </div>
+                </div>
+
+
+                <div class="title-1">
+                    <div>
+                        <img src="img/content-title-1.png" alt="" id="title-1-img">
+                    </div>
+                    <div class="title-1-product">
+                        <!-- title 1 product item -->
+                        <a href="" class="t1-link">
+                            <div class="t1-product-item">
+                                <div class="t1-product-img">
+                                    <img src="img/default.png" alt="" class="img-product t1-img-1">
+                                    <div class="t1-sale-off-logo t1-so-1"></div>
+                                </div>
+                                <div class="t1-product-info t1-info-1 ">
+                                    name product
+                                </div>
+                                <div class="t1-product-price">
+                                    <span class="t1-product-price-sale t1-ps-1">10.000.000đ</span>
+                                    <span class="t1-product-price-actual t1-pa-1">15.000.000đ</span>
+                                    <div class="t1-sale-off">Trả góp 0%</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="t1-link">
+                            <div class="t1-product-item">
+                                <div class="t1-product-img">
+                                    <img src="img/default.png" alt="" class="img-product t1-img-2">
+                                    <div class="t1-sale-off-logo t1-so-2"></div>
+                                </div>
+                                <div class="t1-product-info t1-info-2 ">
+                                    name product
+                                </div>
+                                <div class="t1-product-price">
+                                    <span class="t1-product-price-sale t1-ps-2">10.000.000đ</span>
+                                    <span class="t1-product-price-actual t1-pa-2">15.000.000đ</span>
+                                    <div class="t1-sale-off">Trả góp 0%</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="" class="t1-link">
+                            <div class="t1-product-item">
+                                <div class="t1-product-img">
+                                    <img src="img/default.png" alt="" class="img-product t1-img-3">
+                                    <div class="t1-sale-off-logo t1-so-3"></div>
+                                </div>
+                                <div class="t1-product-info t1-info-3 ">
+                                    name product
+                                </div>
+                                <div class="t1-product-price">
+                                    <span class="t1-product-price-sale t1-ps-3">10.000.000đ</span>
+                                    <span class="t1-product-price-actual t1-pa-3">15.000.000đ</span>
+                                    <div class="t1-sale-off">Trả góp 0%</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="" class="t1-link">
+                            <div class="t1-product-item">
+                                <div class="t1-product-img">
+                                    <img src="img/default.png" alt="" class="img-product t1-img-4">
+                                    <div class="t1-sale-off-logo t1-so-4"></div>
+                                </div>
+                                <div class="t1-product-info t1-info-4 ">
+                                    name product
+                                </div>
+                                <div class="t1-product-price">
+                                    <span class="t1-product-price-sale t1-ps-4">10.000.000đ</span>
+                                    <span class="t1-product-price-actual t1-pa-4">15.000.000đ</span>
+                                    <div class="t1-sale-off">Trả góp 0%</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="" class="t1-link">
+                            <div class="t1-product-item">
+                                <div class="t1-product-img">
+                                    <img src="img/default.png" alt="" class="img-product t1-img-5">
+                                    <div class="t1-sale-off-logo t1-so-5"></div>
+                                </div>
+                                <div class="t1-product-info t1-info-5 ">
+                                    name product
+                                </div>
+                                <div class="t1-product-price">
+                                    <span class="t1-product-price-sale t1-ps-5">10.000.000đ</span>
+                                    <span class="t1-product-price-actual t1-pa-5">15.000.000đ</span>
+                                    <div class="t1-sale-off">Trả góp 0%</div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- title 1 control -->
+                        <div class="t1-product-arrow-left t1-control">
+                            <div><i class="fa-solid fa-angle-left"></i></div>
+                        </div>
+                        <div class="t1-product-arrow-right t1-control">
+                            <div><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="title-2">
+                    <div class="title-2-img">
+                        <img src="img/content-title-2.png" alt="" id="title-2-img">
+                    </div>
+                    <div class="title-2-product">
+
+                    </div>
+                </div>
+                <!-- end content -->
+            </div>
+
+            <!-- banner side left and right -->
+            <div class="banner-side bs-left">
+                <img src="img/banner-side.png" alt="">
+            </div>
+            <div class="banner-side bs-right">
+                <img src="img/banner-side1.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-top-bar">
+            <div class="footer-top-bar-main">
+                <div class="footer-top-bar-content">
+                    <div class="icon-footer">
+                        <div class="icon-footer-item">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="icon-footer-item">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <div class="icon-footer-item">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                    <div class="footer-messages">
+                        <div class="footer-messages-content">
+                            <div class="icon-footer-item">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="footer-messages-text">
+                                Bạn muốn là người sớm nhất nhận khuyến mãi đặc biệt. <br> Đăng ký ngay.
+                            </div>
+                        </div>
+                        <div class="email-register">
+                            <input type="text" placeholder="Thả Email Nhận Ưu Đãi">
+                            <button>Đăng ký</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="footer-credit">
+            <div class="footer-credit-main">
+                <div class="credit-wrap">
+                    <div class="credit-item">
+                        <div class="credit-title">Thông tin công ty</div>
+                        <p>Giới thiệu công ty</p>
+                        <p>Quy chế hoạt động sàn TMĐT</p>
+                        <p>Hệ thống cửa hàng</p>
+                        <p>Mua hàng doanh nghiệp</p>
+                        <p>Tuyển dụng</p>
+                        <p>Liên hệ</p>
+                    </div>
+                    <div class="credit-item">
+                        <div class="credit-title">Danh mục hàng đầu</div>
+                        <p>Máy lạnh</p>
+                        <p>Máy giặt</p>
+                        <p>Tủ lạnh</p>
+                        <p>Tivi</p>
+                        <p>Gia dụng</p>
+                    </div>
+                    <div class="credit-item">
+                        <div class="credit-title">Chính sách</div>
+                        <p>Ưu đãi đối tác</p>
+                        <p>Điều kiện giao dịch</p>
+                        <p>Bảo vệ thông tin người dùng</p>
+                        <p>Bảo vệ thông tin giao dịch khách hàng</p>
+                        <p>Chính sách bảo hành</p>
+                        <p>Chính sách và quy định thanh toán</p>
+                        <p>Chính sách 30 ngày đổi mới</p>
+                    </div>
+                    <div class="credit-item">
+                        <div class="credit-title">Hỗ trợ khách hàng</div>
+                        <p>Hướng dẫn mua hàng</p>
+                        <p>Hóa đơn điện tử</p>
+                        <p>Câu hỏi thường gặp</p>
+                        <p>Vận chuyển và giao nhận</p>
+                        <p>Phương thức thanh toán</p>
+                        <p>Tra cứu đơn hàng</p>
+                        <p>Bảng giá dịch vụ lắp đặt</p>
+                    </div>
+                    <div class="credit-item">
+                        <div class="credit-title">Thông tin khác</div>
+                        <p>Email :
+                        <div class="highlight">thaidat@gmail.com</div>
+                        </p>
+                        <p>Mua hàng - Góp ý - Bảo hành</p>
+                        <p>Gọi:
+                        <div class="highlight">19001000</div>
+                        </p>
+                        <p>Miễn phí</p>
+                        <p>Sơ đồ trang web</p>
+                        <p>
+                        <div class="highlight">Cảnh báo giả mạo</div>
+                        </p>
+                        <p>Kênh tiếp nhận vấn đề về hối lộ</p>
+                        <p>Đường dây nóng:
+                        <div class="highlight">19001010</div>
+                        </p>
+                    </div>
+                    <div class="credit-item">
+                        <div class="credit-title">Group bussiness</div>
+                        <p>Supersports</p>
+                        <p>Big C</p>
+                        <p>GO! Mall</p>
+                        <p>GO! Hyper</p>
+                        <p>Topsmarket</p>
+                    </div>
+                    <div class="credit-item">
+                        <div class="credit-title">Group bussiness</div>
+                        <p>Lanchi mart</p>
+                        <p>LookKool</p>
+                        <p>Kubo</p>
+                        <p>ROBINS</p>
+                        <p>Hello Beauty Vietnam</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-payment">
+            <div class="footer-payment-main">
+                <div class="highlight1">THÁI ĐẠT - KÊNH MUA SẮM TRỰC TUYẾN <br> UY TÍN HÀNG ĐẦU VIỆT NAM </div>
+                <div>
+                    <div class="credit-title">Phương thức thanh toán</div>
+                    <div>
+                        <img src="img/footer-payment.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="credit-title">Chứng nhận</div>
+                    <div>
+                        <img src="img/footer-archive.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="copyright-content">
+                Copyright © 1999 - 2022 Công ty Cổ phần Thương mại Thái Đạt.
+                <br>
+                Giấy chứng nhận đăng ký kinh doanh số xxxxxxxx, cấp ngày 22/06/2006 bởi Sở Kế hoạch và Đầu tư
+                TP. Hồ Chí Minh.
+                <br>
+                Địa chỉ đăng ký trụ sở chính: 59/24 Nguyễn Dữ, Vĩnh Hòa, Nha Trang, Khánh Hòa
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------- -->
+
+
+    <!--  -->
+    <div class="extention">
+        <div class="menu__mobile">
+            <div class="menu-items__mobile">
+                <div class="menu-item-close__mobile">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="menu-item-content__mobile">
+                    <div class="menu-item__mobile">
+                        <i class="fa-solid fa-house"></i> Trang chủ
+                    </div>
+                    <div class="menu-item__mobile">
+                        <i class="fa-solid fa-magnifying-glass"></i> Tìm Kiếm
+                    </div>
+                    <div class="menu-item__mobile">
+                        <a href="htdocs/cart.html"><i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng</a>
+                    </div>
+                    <div class="menu-item__mobile">
+                        <i class="fa-solid fa-user"></i> <a href="htdocs/account.html">Tài Khoản</a>
+                    </div>
+                    <div class="menu-item__mobile">
+                        <i class="fa-solid fa-phone"></i> <a href="tel:0921083980">Liên Hệ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="overplay"></div>
+        </div>
+        <div class="hotline">
+            <div class="hotline-info">
+                <div>
+                    <a href="tel:0921083980">Hotline: 0921083980</a>
+                </div>
+                <div class="hotline-icon">
+                    <i class="fa-solid fa-phone-volume"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/data.js"></script>
+<script src="js/header.js"></script>
+<script type="module" src="js/data.js"></script>
+<script src="js/topbar.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/carousel.js"></script>
+<script type="module" src="js/t1_product.js"></script>
+<script type="module" src="js/t2_product.js"></script>
+
+</html>
